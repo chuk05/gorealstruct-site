@@ -1,11 +1,15 @@
 baseURL = 'https://gorealstruct.com/'
 languageCode = 'en-gb'
-title = 'Goreal Struct Ltd'
-theme = 'ananke'
+title = 'Goreal Struct'
+
+disableKinds = ['taxonomy', 'term', 'RSS', 'sitemap']
 
 [params]
-  description = 'Engineering, Surveying & Construction - Precision surveys with Trimble S7, R12i GNSS and UAV reality capture.'
-  author = 'Chuk'
-  # You can add your logo here depending on the theme
-  # For the Ananke theme, you can set a logo image by adding:
-  # logo = '/logo.png'
+  description = 'Integrated engineering, geospatial surveying, UAV mapping and digital construction services across UK and international infrastructure projects.'
+  author = 'Goreal Struct Ltd'
+  keywords = 'engineering consultancy, geospatial surveying, UAV mapping, digital construction, Trimble GNSS, infrastructure projects'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
